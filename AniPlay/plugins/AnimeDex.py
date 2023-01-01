@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 from AniPlay.plugins.other import emoji
 
 
-class AnimeDex:
+class Bakaplay:
     def __init__(self) -> None:
         pass
 
@@ -16,7 +16,7 @@ class AnimeDex:
 
         for anime in soup.find('div', 'divox').find_all('a'):
             title = anime.find('h3').text
-            url = 'https://animedex.live' + anime.get('href')
+            url = 'https://bakaplay.online' + anime.get('href')
             animes.append((title, url))
         return animes
 
