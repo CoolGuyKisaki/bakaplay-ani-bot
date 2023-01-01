@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 from AniPlay.plugins.other import emoji
 
 
-class Bakaplay:
+class AnimeDex:
     def __init__(self) -> None:
         pass
 
